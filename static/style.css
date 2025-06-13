@@ -1,9 +1,11 @@
 /* Reset and Base Styles */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0fdf4; /* light green background */
+  background: #f0fdf4;
+  /* light green background */
   height: 100%;
   display: flex;
   justify-content: center;
@@ -12,8 +14,8 @@ body, html {
 
 /* Chat Container */
 .chat-container {
-  width: 420px;
-  height: 600px;
+  width: 1220px;
+  height: 800px;
   background-color: #ffffff;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
@@ -24,7 +26,8 @@ body, html {
 
 /* Chat Header */
 .chat-header {
-  background: linear-gradient(135deg, #10b981, #34d399); /* emerald-green to mint-green */
+  background: linear-gradient(135deg, #10b981, #34d399);
+  /* emerald-green to mint-green */
   color: white;
   padding: 18px;
   font-size: 22px;
@@ -39,7 +42,11 @@ body, html {
   flex-grow: 1;
   padding: 16px;
   overflow-y: auto;
-  background: #e6fef1; /* soft mint */
+  background: #e6fef1;
+  /* soft mint */
+  display: flex;
+  /* Add this */
+  flex-direction: column;
 }
 
 /* Chat Messages */
@@ -54,14 +61,16 @@ body, html {
 }
 
 .message.user {
-  background-color: #c7f9cc; /* light green */
+  background-color: #c7f9cc;
+  /* light green */
   align-self: flex-end;
   color: #065f46;
   border-bottom-right-radius: 0;
 }
 
 .message.bot {
-  background-color: #d9f99d; /* soft lime */
+  background-color: #d9f99d;
+  /* soft lime */
   align-self: flex-start;
   color: #365314;
   border-bottom-left-radius: 0;
