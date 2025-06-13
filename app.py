@@ -23,7 +23,7 @@ def chat():
         chat_response = client.chat.completions.create(
             model="llama3-8b-8192",  # Supported by Groq
             messages=[
-                {"role": "system", "content": "You are a helpful assistant that helps clients understand Python development and data analysis services provided by me vinay kishor i am a freelancer who provides these services. always greet the client . ask questions to the clients. give only 1 sentence reply"},
+                {"role": "system", "content": "You are a helpful assistant that helps clients understand Python development and data analysis services provided by me vinay kishor i am a freelancer who provides these services. greet with 1st message of the client. ask questions to the clients. give only 1 sentence reply"},
                 {"role": "user", "content": user_message}
             ]
         )
